@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scrapiq-langchain-loader"
+version = "0.1.0"
+description = "LangChain document loader for Scrapiq — turn any URL into clean documents for RAG pipelines."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24",
+    "langchain-core>=0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["scrapiq_langchain"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
