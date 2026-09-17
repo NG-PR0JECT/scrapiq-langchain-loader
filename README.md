@@ -6,11 +6,13 @@
 
 ## Install
 
+Not on PyPI yet, so install straight from this repo (run against `main`, 2026-09-17):
+
 ```bash
-pip install scrapiq-langchain-loader
+pip install git+https://github.com/NG-PR0JECT/scrapiq-langchain-loader
 ```
 
-Requires a running Scrapiq instance (see [Scrapiq README](https://github.com/NG-PR0JECT/scrapiq#quick-start) — one Docker command).
+Requires a running Scrapiq instance (see [Scrapiq README](https://github.com/NG-PR0JECT/scrapiq#quick-start-self-hosted) — `git clone`, `pip install -e ".[dev]"`, then `scrapiq`).
 
 ## Usage
 
